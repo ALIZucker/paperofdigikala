@@ -1,0 +1,70 @@
+$colorred: #d32f2f;
+$colorgrayborder: #c0bebe;
+$colorgray: #ecebeb;
+$colorblack: #212121;
+$colorwhite: #ffff;
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin sizeall($w,$h,$x,$y,$px,$py) {
+  width: $w;
+  height: $h;
+  margin: $y $x;
+  padding: $py $px;
+}
+
+@mixin displayall($distype,$disjusty,$disdire,$diswarp) {
+  display: $distype;
+  justify-content: $disjusty;
+  flex-direction: $disdire;
+  flex-wrap: $diswarp;
+
+}
+
+@mixin fontall($fontsize,$fontw,$directtext) {
+  font-size: $fontsize;
+  font-weight: $fontw;
+  direction: $directtext;
+}
+
+/*-----------------------------------------------------------------------------*/
+.contair-image{
+  @include sizeall(100%, auto, 0, 0, 0, 0);
+
+}
+.bascket {
+  @include sizeall(2.5vw, 5vh, 0, 0, 1vw, 2vh);
+  cursor: pointer;
+}
+/*----------------------------------------------------------------*/
+#header {
+  @include sizeall(100%, auto, 0, 0, 1vw, 2vh);
+  @include displayall(flex, space-between, row, wrap);
+  box-sizing: border-box;
+  position: sticky;
+  box-shadow: 0 1px 5px 0 gray;
+}
+
+#search {
+  @include sizeall(35vw, 4vh, 2.2vw, 1.5vh, 0.8vw, 0.8vh);
+  @include fontall(1.2vw, 400, rtl);
+  border-radius: 8px;
+  background-color: $colorgray;
+  border: 0.5px $colorgrayborder solid;
+}
+
+#logo {
+  @include sizeall(8vw, 5vh, 2.2vw, 1vh, 0, 0);
+}
+
+#contaner-lego {
+  align-items: center;
+  @include displayall(flex, none, row, wrap);
+}
+#imagemain{
+  @include sizeall(100%, 60vh, 0, 0, 0, 0);
+  object-fit: fill;
+}
+
