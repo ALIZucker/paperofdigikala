@@ -1,5 +1,5 @@
 $colorred: #d32f2f;
-$colorgrayborder: #c0bebe;
+$colorgrayborder: #858383;
 $colorgray: #ecebeb;
 $colorblack: #212121;
 $colorwhite: #ffff;
@@ -30,20 +30,65 @@ body {
 }
 
 /*-----------------------------------------------------------------------------*/
-.contair-image{
+.contair-image {
   @include sizeall(100%, auto, 0, 0, 0, 0);
-
+  @include displayall(flex, start, row, wrap);
 }
+
 .bascket {
   @include sizeall(2.5vw, 5vh, 0, 0, 1vw, 2vh);
   cursor: pointer;
 }
+
+.product-box {
+  @include sizeall(29%, auto, 0, 0, 1vw, 2vh);
+  @include displayall(flex, center, column, wrap);
+
+}
+
+.img-prod {
+  @include sizeall(90%, 50vh, 0, 2vh, 1vw, 0);
+}
+
+.title-prod {
+  @include fontall(1.2vw, 600, rtl)
+}
+
+.rank-star {
+  @include fontall(1.1vw, 400, rtl);
+  margin: 1vw 1vh;
+  @include displayall(flex, space-between, row, wrap);
+}
+
+.rank-star > div img {
+  @include sizeall(1vw, 2vh, 0, 0, 0, 0);
+}
+
+.rank-star > span {
+  color: $colorred;
+  @include fontall(1.1vw, 500, rtl);
+}
+
+.darsad {
+  background-color: $colorred;
+  color: $colorwhite;
+  @include fontall(0.9vw, 600, rtl);
+  padding: 0 0.8vw;
+  border-radius: 8px;
+}
+
+.takhfif {
+  color: gray;
+}
+
 /*----------------------------------------------------------------*/
 #header {
   @include sizeall(100%, auto, 0, 0, 1vw, 2vh);
   @include displayall(flex, space-between, row, wrap);
   box-sizing: border-box;
   position: sticky;
+  top: -1px;
+  background-color: $colorwhite;
   box-shadow: 0 1px 5px 0 gray;
 }
 
@@ -63,8 +108,94 @@ body {
   align-items: center;
   @include displayall(flex, none, row, wrap);
 }
-#imagemain{
+
+#imagemain {
   @include sizeall(100%, 60vh, 0, 0, 0, 0);
   object-fit: fill;
 }
 
+#selectors {
+  @include displayall(flex, space-between, row-reverse, wrap);
+  align-items: center;
+  @include sizeall(100%, 3.2vh, 0, 1.6vh, 0.2vw, 0);
+  box-sizing: border-box;
+  color: gray;
+}
+
+#selectors > ul li:hover {
+  cursor: pointer;
+}
+
+#selectors > ul {
+  @include displayall(flex, space-around, row-reverse, wrap);
+  list-style-type: none;
+  @include sizeall(72%, 3vh, 0, 0, 0, 0);
+  @include fontall(1.2vw, 600, ltr)
+}
+
+#rightside {
+  @include sizeall(80%, auto, 0, 0, 0, 0);
+  @include displayall(flex, none, column, wrap);
+
+}
+
+#selectors > span {
+  @include fontall(1.1vw, 400, ltr);
+  @include sizeall(10%, 3vh, 0, 0, 0.5vw, 0);
+  color: gray;
+}
+
+#box-show {
+  @include displayall(flex, start, row, wrap);
+}
+
+.product-box:hover {
+  box-shadow: 0 0 20px 1px #b7b7b7;
+}
+
+#slider {
+  align-items: center;
+  @include sizeall(19.5%, auto, 0, 0, 1vw, 0);
+  @include displayall(flex, none, column, wrap);
+  border: 1px #a29f9f solid;
+  box-sizing: border-box;
+}
+#slider > div{
+  @include displayall(flex, space-between, row, wrap);
+  align-items: center;
+  border-top: 1px #e5e4e4 solid;
+  @include sizeall(100%, auto, 0, 2vh, 0, 1vh);
+}
+#slider > div a{
+  @include fontall(1.1vw,600,rtl);
+  color: #07c9c9;
+}
+#slider > div span{
+  @include fontall(1.5vw,500,rtl)
+}
+#slider > div img{
+  @include sizeall(1.2vw, 3.2vh, 0, 0, 0, 0);
+}
+.tozihat{
+  @include displayall(flex, none, row, wrap);
+  margin-top: 1.5vh;
+  background-color: #eeecec;
+}
+.tozihat > div{
+  @include sizeall(49%, auto, 0, 0, 0, 0);
+  @include displayall(flex, center, column, wrap);
+  align-items: end;
+}
+.tozihat > div h2{
+  @include fontall(2vw,700,rtl);
+  margin-right: 2vw;
+}
+.tozihat > div p{
+  @include fontall(1.2vw,400,rtl);
+  margin-right: 2vw;
+  margin-left: 2vw;
+  text-align: justify;
+}
+.tozihat > div img{
+  @include sizeall(40vw, auto, 0, 0, 0, 0);
+}
