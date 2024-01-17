@@ -58,8 +58,8 @@ body {
   padding: 0 0; }
 
 .rank-star > span {
-  color: #d32f2f;
-  font-size: 1.1vw;
+  color: #383838;
+  font-size: 1.2vw;
   font-weight: 500;
   direction: rtl; }
 
@@ -96,7 +96,7 @@ body {
   height: 4vh;
   margin: 1.5vh 2.2vw;
   padding: 0.8vh 0.8vw;
-  font-size: 1.2vw;
+  font-size: 1vw;
   font-weight: 400;
   direction: rtl;
   border-radius: 8px;
@@ -149,8 +149,8 @@ body {
   height: 3vh;
   margin: 0 0;
   padding: 0 0;
-  font-size: 1.2vw;
-  font-weight: 600;
+  font-size: 1vw;
+  font-weight: 500;
   direction: ltr; }
 
 #rightside {
@@ -175,7 +175,7 @@ body {
 
 #box-show {
   display: flex;
-  justify-content: start;
+  justify-content: end;
   flex-direction: row;
   flex-wrap: wrap; }
 
@@ -208,13 +208,13 @@ body {
   padding: 1vh 0; }
 
 #slider > div a {
-  font-size: 1.1vw;
+  font-size: 1vw;
   font-weight: 600;
   direction: rtl;
   color: #07c9c9; }
 
 #slider > div span {
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   font-weight: 500;
   direction: rtl; }
 
@@ -244,13 +244,13 @@ body {
   align-items: end; }
 
 .tozihat > div h2 {
-  font-size: 2vw;
-  font-weight: 700;
+  font-size: 1.7vw;
+  font-weight: 400;
   direction: rtl;
   margin-right: 2vw; }
 
 .tozihat > div p {
-  font-size: 1.2vw;
+  font-size: 1vw;
   font-weight: 400;
   direction: rtl;
   margin-right: 2vw;

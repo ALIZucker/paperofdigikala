@@ -1,7 +1,7 @@
 $colorred: #d32f2f;
 $colorgrayborder: #858383;
 $colorgray: #ecebeb;
-$colorblack: #212121;
+$colorblack: #383838;
 $colorwhite: #ffff;
 body {
   margin: 0;
@@ -65,8 +65,8 @@ body {
 }
 
 .rank-star > span {
-  color: $colorred;
-  @include fontall(1.1vw, 500, rtl);
+  color: $colorblack;
+  @include fontall(1.2vw, 500, rtl);
 }
 
 .darsad {
@@ -79,6 +79,7 @@ body {
 
 .takhfif {
   color: gray;
+
 }
 
 /*----------------------------------------------------------------*/
@@ -94,7 +95,7 @@ body {
 
 #search {
   @include sizeall(35vw, 4vh, 2.2vw, 1.5vh, 0.8vw, 0.8vh);
-  @include fontall(1.2vw, 400, rtl);
+  @include fontall(1vw, 400, rtl);
   border-radius: 8px;
   background-color: $colorgray;
   border: 0.5px $colorgrayborder solid;
@@ -130,7 +131,7 @@ body {
   @include displayall(flex, space-around, row-reverse, wrap);
   list-style-type: none;
   @include sizeall(72%, 3vh, 0, 0, 0, 0);
-  @include fontall(1.2vw, 600, ltr)
+  @include fontall(1vw, 500, ltr)
 }
 
 #rightside {
@@ -146,7 +147,7 @@ body {
 }
 
 #box-show {
-  @include displayall(flex, start, row, wrap);
+  @include displayall(flex, end, row, wrap);
 }
 
 .product-box:hover {
@@ -160,42 +161,51 @@ body {
   border: 1px #a29f9f solid;
   box-sizing: border-box;
 }
-#slider > div{
+
+#slider > div {
   @include displayall(flex, space-between, row, wrap);
   align-items: center;
   border-top: 1px #e5e4e4 solid;
   @include sizeall(100%, auto, 0, 2vh, 0, 1vh);
 }
-#slider > div a{
-  @include fontall(1.1vw,600,rtl);
+
+#slider > div a {
+  @include fontall(1vw, 600, rtl);
   color: #07c9c9;
 }
-#slider > div span{
-  @include fontall(1.5vw,500,rtl)
+
+#slider > div span {
+  @include fontall(1.3vw, 500, rtl)
 }
-#slider > div img{
+
+#slider > div img {
   @include sizeall(1.2vw, 3.2vh, 0, 0, 0, 0);
 }
-.tozihat{
+
+.tozihat {
   @include displayall(flex, none, row, wrap);
   margin-top: 1.5vh;
   background-color: #eeecec;
 }
-.tozihat > div{
+
+.tozihat > div {
   @include sizeall(49%, auto, 0, 0, 0, 0);
   @include displayall(flex, center, column, wrap);
   align-items: end;
 }
-.tozihat > div h2{
-  @include fontall(2vw,700,rtl);
+
+.tozihat > div h2 {
+  @include fontall(1.7vw, 400, rtl);
   margin-right: 2vw;
 }
-.tozihat > div p{
-  @include fontall(1.2vw,400,rtl);
+
+.tozihat > div p {
+  @include fontall(1vw, 400, rtl);
   margin-right: 2vw;
   margin-left: 2vw;
   text-align: justify;
 }
-.tozihat > div img{
+
+.tozihat > div img {
   @include sizeall(40vw, auto, 0, 0, 0, 0);
 }

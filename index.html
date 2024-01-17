@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/image/pwa-icon-180.png">
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css">
 </head>
 <body>
 <!--هدر بالایی سایت نوار بالایی-->
@@ -31,12 +33,12 @@
         <div id="selectors">
             <ul>
                 <li>:مرتب سازی</li>
-                <li>مرتبط ترین</li>
-                <li>پربازدیدترین</li>
-                <li>جدیدترین</li>
-                <li>پرفروشترین</li>
-                <li>ارزانترین</li>
-                <li>گرانترین</li>
+                <li onclick="mortabet()">مرتبط ترین</li>
+                <li onclick="porbazdid()">پربازدیدترین</li>
+                <li onclick="Jadidtrin()">جدیدترین</li>
+                <li onclick="Porfrosh()">پرفروشترین</li>
+                <li onclick="LowPrice()">ارزانترین</li>
+                <li onclick="HightPrice()">گرانترین</li>
                 <li>سریعترین ارسال</li>
                 <li>پشنهاد خریداران</li>
                 <li>منتخب</li>
@@ -45,86 +47,7 @@
         </div>
         <!--کل محصولات و کالا ها خواهد بود -->
         <div id="box-show">
-            <article class="product-box">
-                <div style="direction: rtl">
-                    <img src="assets/image/SpecialSell.png">
-                </div>
-                <img class="img-prod" src="assets/image/prod1.webp">
-                <div style="direction: rtl">
-                    <h3 class="title-prod">ست 4 تیکه لباس نوزاد آدمک طرح گریه بازیگوش</h3>
-                </div>
-                <div class="rank-star">
-                    <span>تنها 2 عدد در انبار باقی مانده</span>
-                    <div><span>4.3</span><img src="assets/image/star.png"></div>
-                </div>
-                <div class="rank-star">
-                    <div class="darsad">30%</div>
-                    <div>369.900</div>
-                </div>
-                <div style="direction: ltr; ">
-                    <span><del class="takhfif">500.000</del></span>
-                </div>
-            </article>
-            <article class="product-box">
-                <div style="direction: rtl">
-                    <img src="assets/image/SpecialSell.png">
-                </div>
-                <img class="img-prod" src="assets/image/prod1.webp">
-                <div style="direction: rtl">
-                    <h3 class="title-prod">ست 4 تیکه لباس نوزاد آدمک طرح گریه بازیگوش</h3>
-                </div>
-                <div class="rank-star">
-                    <span>تنها 2 عدد در انبار باقی مانده</span>
-                    <div><span>4.3</span><img src="assets/image/star.png"></div>
-                </div>
-                <div class="rank-star">
-                    <div class="darsad">30%</div>
-                    <div>369.900</div>
-                </div>
-                <div style="direction: ltr; ">
-                    <span><del class="takhfif">500.000</del></span>
-                </div>
-            </article>
-            <article class="product-box">
-                <div style="direction: rtl">
-                    <img src="assets/image/SpecialSell.png">
-                </div>
-                <img class="img-prod" src="assets/image/prod1.webp">
-                <div style="direction: rtl">
-                    <h3 class="title-prod">ست 4 تیکه لباس نوزاد آدمک طرح گریه بازیگوش</h3>
-                </div>
-                <div class="rank-star">
-                    <span>تنها 2 عدد در انبار باقی مانده</span>
-                    <div><span>4.3</span><img src="assets/image/star.png"></div>
-                </div>
-                <div class="rank-star">
-                    <div class="darsad">30%</div>
-                    <div>369.900</div>
-                </div>
-                <div style="direction: ltr; ">
-                    <span><del class="takhfif">500.000</del></span>
-                </div>
-            </article>
-            <article class="product-box">
-                <div style="direction: rtl">
-                    <img src="assets/image/SpecialSell.png">
-                </div>
-                <img class="img-prod" src="assets/image/prod1.webp">
-                <div style="direction: rtl">
-                    <h3 class="title-prod">ست 4 تیکه لباس نوزاد آدمک طرح گریه بازیگوش</h3>
-                </div>
-                <div class="rank-star">
-                    <span>تنها 2 عدد در انبار باقی مانده</span>
-                    <div><span>4.3</span><img src="assets/image/star.png"></div>
-                </div>
-                <div class="rank-star">
-                    <div class="darsad">30%</div>
-                    <div>369.900</div>
-                </div>
-                <div style="direction: ltr; ">
-                    <span><del class="takhfif">500.000</del></span>
-                </div>
-            </article>
+
 
         </div>
     </section>
@@ -148,15 +71,15 @@
             <span>محدوده قیمت</span>
         </div>
         <div>
-            <input type="checkbox" id="emroz">
+            <input type="checkbox" id="emroz" onclick="postitems()">
             <span> ارسال امروز</span>
         </div>
         <div>
-            <input type="checkbox" id="soper">
+            <input type="checkbox" id="soper" onclick="postitems()">
             <span> ارسال سوپر مارکتی</span>
         </div>
         <div>
-            <input type="checkbox" id="froshande">
+            <input type="checkbox" id="froshande" onclick="postitems()">
             <span>ارسال فروشنده</span>
         </div>
         <div>

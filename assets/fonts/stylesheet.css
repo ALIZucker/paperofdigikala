@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Vazir';
+    src: url('Vazir-Bold.eot');
+    src: url('Vazir-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Vazir-Bold.woff2') format('woff2'),
+        url('Vazir-Bold.woff') format('woff'),
+        url('Vazir-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lalezar';
+    src: url('Lalezar-Regular.eot');
+    src: url('Lalezar-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Lalezar-Regular.woff2') format('woff2'),
+        url('Lalezar-Regular.woff') format('woff'),
+        url('Lalezar-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+#search{
+    font-family: Vazir;
+}
+#selectors > ul{
+    font-family: Vazir;
+}
+#selectors > span{font-family: Vazir;}
+#slider > div {
+    font-family: Lalezar;
+}
+.product-box > div{
+    font-family: Vazir;
+}
+.tozihat > div h2 {
+    font-family: Lalezar;
+}
+.tozihat > div p {
+    font-family: Vazir;
+}
+
